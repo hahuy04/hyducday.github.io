@@ -308,9 +308,18 @@
             </div>
         </div> 
         <h4 class="text-danger"><li>Phần b</li></h4>
+        <style>
+            .box {
+                min-height: 113px; /* chỉnh chiều cao tối thiểu cho ô */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+            }
+        </style>
         <div class="container">
             <div class="row text-white" style="height: 500px;">
-            <div class="col-4 bg-light h-100 d-flex flex-column">
+            <div class="col-4 bg-secondary rounded-3  h-100 d-flex flex-column">
                 <h3 class="text-dark mt-3">Logo</h3>
                 <div class="flex-grow-1">
                 <ul class="list-unstyled text-dark">
@@ -321,50 +330,56 @@
                 </ul>
                 </div>
             </div>
-            <div class="col-8 h-100 d-flex flex-column">
-                <!-- Hàng 1 -->
-                <div class="row mb-2 flex-shrink-0">
-                <div class="col-12 bg-cyan text-white p-2 rounded text-center">Hàng 1</div>
-                </div>
-                <!-- Hàng 2: 4 ô -->
-                <div class="row mb-2 flex-shrink-0">
-                <div class="col-3">
-                    <div class="bg-success text-white p-2 rounded text-center">Ô 1</div>
-                </div>
-                <div class="col-3">
-                    <div class="bg-danger text-white p-2 rounded text-center">Ô 2</div>
-                </div>
-                <div class="col-3">
-                    <div class="bg-warning text-dark p-2 rounded text-center">Ô 3</div>
-                </div>
-                <div class="col-3">
-                    <div class="bg-info text-white p-2 rounded text-center">Ô 4</div>
-                </div>
-                </div>
-                <!-- Hàng 3: 3 ô -->
-                <div class="row mb-2 flex-shrink-0">
-                <div class="col-4">
-                    <div class="bg-primary text-white p-2 rounded text-center">Ô 1</div>
-                </div>
-                <div class="col-4">
-                    <div class="bg-secondary text-white p-2 rounded text-center">Ô 2</div>
-                </div>
-                <div class="col-4">
-                    <div class="bg-dark text-white p-2 rounded text-center">Ô 3</div>
-                </div>
-                </div>
-                <!-- Hàng 4: 2 ô -->
-                <div class="row">
-                <div class="col-6">
-                    <div class="bg-success text-white p-2 rounded text-center">Ô 1</div>
-                </div>
-                <div class="col-6">
-                    <div class="bg-danger text-white p-2 rounded text-center">Ô 2</div>
-                </div>
-                </div>
-            </div>
+            <div class="col-8 h-100 d-flex flex-column gap-3">
+    <!-- Hàng 1 -->
+    <div class="row">
+        <div class="col-12">
+            <div class="box bg-info text-white p-3 rounded-3 shadow-sm text-center fw-bold">
+                Hàng 1
             </div>
         </div>
+    </div>
+
+    <!-- Hàng 2: 4 ô -->
+    <div class="row g-3">
+        <div class="col-3">
+            <div class="box bg-success text-white p-3 rounded-3 shadow-sm text-center">Ô 1</div>
+        </div>
+        <div class="col-3">
+            <div class="box bg-danger text-white p-3 rounded-3 shadow-sm text-center">Ô 2</div>
+        </div>
+        <div class="col-3">
+            <div class="box bg-warning text-dark p-3 rounded-3 shadow-sm text-center">Ô 3</div>
+        </div>
+        <div class="col-3">
+            <div class="box bg-primary text-white p-3 rounded-3 shadow-sm text-center">Ô 4</div>
+        </div>
+    </div>
+
+    <!-- Hàng 3: 3 ô -->
+    <div class="row g-3">
+        <div class="col-4">
+            <div class="box bg-primary text-white p-3 rounded-3 shadow-sm text-center">Ô 1</div>
+        </div>
+        <div class="col-4">
+            <div class="box bg-secondary text-white p-3 rounded-3 shadow-sm text-center">Ô 2</div>
+        </div>
+        <div class="col-4">
+            <div class="box bg-dark text-white p-3 rounded-3 shadow-sm text-center">Ô 3</div>
+        </div>
+    </div>
+
+    <!-- Hàng 4: 2 ô -->
+    <div class="row g-3">
+        <div class="col-6">
+            <div class="box bg-success text-white p-3 rounded-3 shadow-sm text-center mb-3">Ô 1</div>
+        </div>
+        <div class="col-6">
+            <div class="box bg-danger text-white p-3 rounded-3 shadow-sm text-center">Ô 2</div>
+        </div>
+    </div>
+</div>
+
     </div>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
