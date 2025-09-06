@@ -54,7 +54,7 @@
       font-weight: bold;
       color: #5b5b5b !important;
     }
-    img,.img-thumbnail {
+    .img,.img-thumbnail {
       max-width: 10%;
       height: auto;
     }
@@ -98,9 +98,9 @@
 
   <h4>Bài 2.2: Hình ảnh với hiệu ứng bo góc</h4>
   <div class="container justify-content-center d-flex gap-3 mb-4">
-    <img src="IMG/473079411_1303696300767126_602388268920721011_n.jpg" class="rounded" alt="Rounded">
-    <img src="IMG/518448799_1433266384476783_5738655605245480391_n.jpg" class="rounded-circle" alt="Circle">
-    <img class="img-thumbnail" src="IMG/473079411_1303696300767126_602388268920721011_n.jpg" class="rounded-3" alt="Rounded Corners">
+    <img  src="IMG/473079411_1303696300767126_602388268920721011_n.jpg" class="rounded img" alt="Rounded">
+    <img src="IMG/518448799_1433266384476783_5738655605245480391_n.jpg" class="rounded-circle img" alt="Circle">
+    <img  src="IMG/473079411_1303696300767126_602388268920721011_n.jpg" class="rounded-3 img-thumbnail img" alt="Rounded Corners">
   </div>
   <hr>
 
@@ -108,31 +108,292 @@
 
 
   <div class="border container mb-3 p-2">
-    <img src="IMG/473079411_1303696300767126_602388268920721011_n.jpg" alt="Left">
+    <img class="img" src="IMG/473079411_1303696300767126_602388268920721011_n.jpg" alt="Left">
   </div>
 
-  <div class="borde container mb-3 p-2 text-center">
-    <img src="IMG/518448799_1433266384476783_5738655605245480391_n.jpg" alt="Center">
+  <div class="border container mb-3 p-2 text-center">
+    <img class="img" src="IMG/518448799_1433266384476783_5738655605245480391_n.jpg" alt="Center">
   </div>
 
  
   <div class="border container mb-3 p-2 text-end">
-    <img src="IMG/473079411_1303696300767126_602388268920721011_n.jpg" alt="Right">
+    <img class="img" src="IMG/473079411_1303696300767126_602388268920721011_n.jpg" alt="Right">
   </div>
 
 
   <div class="border container mb-3 p-2 clearfix">
-    <img src="IMG/518448799_1433266384476783_5738655605245480391_n.jpg" class="float-start" alt="Float Left">
-    <img src="IMG/473079411_1303696300767126_602388268920721011_n.jpg" class="float-end" alt="Float Right">
+    <img src="IMG/518448799_1433266384476783_5738655605245480391_n.jpg" class="float-start img" alt="Float Left">
+    <img  src="IMG/473079411_1303696300767126_602388268920721011_n.jpg" class="float-end img" alt="Float Right">
   </div>
 
 
   <div class="border container container mb-3 p-2">
-    <img src="IMG/473079411_1303696300767126_602388268920721011_n.jpg" class="d-block mx-auto" alt="Auto Margin Center">
+    <img src="IMG/473079411_1303696300767126_602388268920721011_n.jpg" class="d-block img mx-auto" alt="Auto Margin Center">
   </div>
-        <main></main>
+    <h4>Bài 2.4: Tạo phân trang theo mẫu</h4>
+
+    <h4>a Phân trang cơ bản</h4>
+    <nav class="container">
+        <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </nav>
+
+    <h4 class="mt-4">b Kích thước khối phân trang</h4>
+    <p>Large:</p>
+    <ul class="pagination container pagination-lg">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+
+    <p>Default:</p>
+    <ul class="pagination container">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+
+    <p>Small:</p>
+    <ul class="pagination container pagination-sm">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+
+    <h4 class="mt-4">c Căn lề phân trang</h4>
+    <p>Left:</p>
+    <ul class="pagination container justify-content-start">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+
+    <p>Center:</p>
+    <ul class="pagination container justify-content-center">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+
+    <p>Right:</p>
+    <ul class="pagination container justify-content-end">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+    <h4 >Bài 2.5: Tạo màu nền theo ngữ cảnh</h4>
+    <div class="container">
+    <p class=" p-2">Sử dụng các class màu nền theo ngữ cảnh</p>
+    <p class="bg-primary text-white p-2">Văn bản quan trọng.</p>
+    <p class="bg-success text-white p-2">Văn bản chỉ ra sự thành công.</p>
+    <p class="bg-info text-dark p-2">Văn bản chứa thông tin.</p>
+    <p class="bg-warning text-dark p-2">Văn bản này là cảnh báo.</p>
+    <p class="bg-danger text-white p-2">Văn bản thông báo sự nguy hiểm.</p>
+    <p class="bg-secondary text-white p-2">Màu nền phụ.</p>
+    <p class="bg-dark text-white p-2">Màu nền xám đen.</p>
+    <p class="bg-light text-dark p-2">Màu nền xám trắng.</p>
+    </div>
+    <h4>Bài 2.6: Tạo màu sắc theo ngữ cảnh</h4>
+    <div class="container">
+        <p class="text-muted">Văn bản bị muted.</p>
+        <p class="text-primary">Văn bản quan trọng.</p>
+        <p class="text-success">Văn bản chỉ ra sự thành công.</p>
+        <p class="text-info">Văn bản đại diện cho một số thông tin.</p>
+        <p class="text-warning">Văn bản này là cảnh báo.</p>
+        <p class="text-danger"> Văn bản thông báo sự nguy hiểm.</p>
+        <p class="text-secondary">Văn bản phụ.</p>
+        <p class="text-dark">Văn bản này có màu xám đen.</p>
+        <p class="text-light bg-dark">Văn bản màu sáng (cần nền tối).</p>
+        <p class="text-body">Màu body mặc định (thường là màu đen).</p>
+    </div>
+  <h4>Bài 2.7: Độ mờ cho màu chữ</h4>
+  <div class="container">
+  <p class="bg-dark text-white-50 p-3">Đây là chữ trắng với độ mờ 50% trên nền đen.</p>
+  <p class="bg-light text-black-50 p-3">Đây là chữ đen với độ mờ 50% trên nền sáng.</p>
+  <hr>
+  </div>
+
+  <h4>Bài 2.8: Màu sắc link theo ngữ cảnh</h4>
+  <div class="container">
+  <p><a href="#" class="link-muted">Link bị muted</a></p>
+  <p><a href="#" class="link-primary">Link chính</a></p>
+  <p><a href="#" class="link-success">Link thành công</a></p>
+  <p><a href="#" class="link-info">Link thông tin</a></p>
+  <p><a href="#" class="link-warning">Link cảnh báo</a></p>
+  <p><a href="#" class="link-danger">Link nguy hiểm</a></p>
+  <p><a href="#" class="link-secondary">Link phụ</a></p>
+  <p><a href="#" class="link-dark">Link xám đen</a></p>
+  <p><a href="#" class="link-body-emphasis">Link body/emphasis</a></p>
+  <hr>
+  </div>
+
+  <h4>Bài 2.9: Card theo mẫu</h4>
+  <h4>a - Tạo card có tiêu đề và liên kết</h4>
+  <div class="container">
+  <div class="card mb-4" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Eiffel Tower</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Champ de Mars, Paris, France</h6>
+      <p class="card-text">Built in 1889 Eiffel Tower is one of the most iconic landmarks in the world.</p>
+      <a href="#" class="card-link">View pictures</a>
+      <a href="#" class="card-link">Learn more</a>
+    </div>
+  </div>
+  <h4>b - Tạo Card và có Header và Footer</h4>
+  <div class="card mb-4">
+    <div class="card-header text-center">Featured</div>
+    <div class="card-body">
+      <h5 class="card-title">NASA Launched Solar Probe</h5>
+      <p class="card-text">NASA launched Parker space probe in 2018 with the mission of making observations of the outer corona of the Sun.</p>
+      <a href="#" class="btn btn-dark">Know more</a>
+    </div>
+    <div class="card-footer text-center text-muted">3 years ago</div>
+  </div>
+  <h4>c - Tạo card có đường viền và nội dung</h4>
+  <div class="row g-3 mb-4">
+    <div class="col-md-6">
+      <div class="card border-primary">
+        <div class="card-body text-primary">
+          <h5 class="card-title">Primary card title</h5>
+          <p class="card-text">Some dummy text to make up the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card border-secondary">
+        <div class="card-body text-secondary">
+          <h5 class="card-title">Secondary card title</h5>
+          <p class="card-text">Some dummy text to make up the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card border-success">
+        <div class="card-body text-success">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">Some dummy text to make up the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card border-danger">
+        <div class="card-body text-danger">
+          <h5 class="card-title">Danger card title</h5>
+          <p class="card-text">Some dummy text to make up the card's content.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-6">
+      <div class="card border-warning">
+        <div class="card-body text-warning">
+          <h5 class="card-title">Warning card title</h5>
+          <p class="card-text">Some dummy text to make up the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card border-info">
+        <div class="card-body text-info">
+          <h5 class="card-title">Info card title</h5>
+          <p class="card-text">Some dummy text to make up the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card border-dark">
+        <div class="card-body text-dark">
+          <h5 class="card-title">Dark card title</h5>
+          <p class="card-text">Some dummy text to make up the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card border-light">
+        <div class="card-body text-dark">
+          <h5 class="card-title">Light card title</h5>
+          <p class="card-text">Some dummy text to make up the card's content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+    <h4>d - Căn chỉnh nội dung bên trong Card</h4>
+  <div class="container">
+  <div class="row  g-3 mb-4 text-center">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some dummy text to make up the card's content.</p>
+          <a href="#" class="btn btn-dark">Know more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some dummy text to make up the card's content.</p>
+          <a href="#" class="btn btn-dark">Know more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some dummy text to make up the card's content.</p>
+          <a href="#" class="btn btn-dark">Know more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <h4>Tạo hiển thị các thông tin</h4>
+  <ul>
+    <li>Ảnh đại diện</li>
+    <li>Họ Tên</li>
+    <li>Nút View Profile</li>
+  </ul>
+<div class="container  ">
+  <div class="row g-3">
+    <div class="col-md-4">
+      <div class="card text-center" style="width: 20rem;">
+        <img src="IMG/518448799_1433266384476783_5738655605245480391_n.jpg" class="card-img-top" alt="Profile">
+        <div class="card-body">
+          <h5 class="card-title">Nguyễn Văn A</h5>
+          <a href="#" class="btn btn-primary">View Profile</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center" style="width: 20rem;">
+        <div class="card-body">
+          <h5 class="card-title">Nguyễn Văn A</h5>
+          <a href="#" class="btn btn-primary">View Profile</a>
+        </div>
+        <img src="IMG/518448799_1433266384476783_5738655605245480391_n.jpg" class="card-img-top" alt="Profile">
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
         <footer>
-            <!-- place footer here -->
         </footer>
 
         <script
