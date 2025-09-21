@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Chương 4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+    .dark-mode {
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+    .light-mode {
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    .bg-glass {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+    }
+    .dark-mode .bg-glass {
+      background: rgba(17, 24, 39, 0.5);
+      border-color: rgba(255, 255, 255, 0.12);
+    }
+    .chip {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.05);
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+    }
+    .text-cyan { color: #06b6d4; }
+    .bg-cyan { background-color: #06b6d4; }
+    .active {
+      font-weight: bold;
+      color: #5b5b5b !important;
+    }
+    .img,.img-thumbnail { max-width: 10%; height: auto; }
+    .breadcrumb { --bs-breadcrumb-divider: '>'; }
+    .demo-section { margin-bottom: 3rem; }
+  </style>
+</head>
+<body class="dark-mode">
+
+<header class="sticky-top py-3 bg-dark bg-opacity-50 border-bottom border-white border-opacity-10 backdrop-blur">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="index.html" class="fw-bold text-decoration-none">Hà Đức Huy</a>
+      <nav class="d-none d-md-flex align-items-center gap-4">
+        <a href="index.html" class="text-white-50 text-decoration-none">Trang chủ</a>
+        <a href="Bai1.html" class="text-white-50 text-decoration-none">Chương 1</a>
+        <a href="Chuong2.html" class="text-white-50 text-decoration-none">Chương 2</a>
+        <a href="Chuong4.html" class="text-white text-decoration-none active">Chương 4</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container py-5">
+
+  <!-- Bài 4.1 -->
+  <section id="b41" class="demo-section">
+    <h2 class="h4">Bài 4.1 – Dropdown Buttons</h2>
+    <div class="btn-toolbar gap-2">
+      <div class="btn-group">
+        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Primary</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Secondary</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Success</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">Info</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">Warning</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Danger</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bài 4.2 -->
+  <section id="b42" class="demo-section">
+    <h2 class="h4">Bài 4.2 – Nav Tabs / Pills / Vertical / Justified</h2>
+    <ul class="nav nav-tabs mb-4">
+      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Messages</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
+    </ul>
+    <ul class="nav nav-pills mb-4">
+      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Messages</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
+    </ul>
+    <ul class="nav nav-pills flex-column gap-2 mb-4">
+      <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-house-door me-2"></i>Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-person me-2"></i>Profile</a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-envelope me-2"></i>Messages</a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-bar-chart me-2"></i>Reports</a></li>
+    </ul>
+    <ul class="nav nav-pills nav-justified">
+      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+    </ul>
+  </section>
+
+  <!-- Bài 4.3 -->
+  <section id="b43" class="demo-section">
+    <h2 class="h4">Bài 4.3 – Navbar có logo, dropdown, ô tìm kiếm</h2>
+    <nav class="navbar navbar-expand-lg bg-light border rounded mb-4">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#"><i class="bi bi-square-fill me-2"></i>Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav43">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav43">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sản phẩm</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Điện thoại</a></li>
+                <li><a class="dropdown-item" href="#">Laptop</a></li>
+                <li><a class="dropdown-item" href="#">Phụ kiện</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Tất cả sản phẩm</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Tìm kiếm...">
+            <button class="btn btn-outline-primary">Tìm</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar có icon -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">S</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="bi bi-phone me-1"></i> Điện thoại</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">iPhone</a></li>
+                <li><a class="dropdown-item" href="#">Samsung</a></li>
+                <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                <li><a class="dropdown-item" href="#">OPPO</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Phụ kiện</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-laptop me-1"></i> Laptop</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-pc-display me-1"></i> PC, Màn hình</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-newspaper me-1"></i> Tin tức công nghệ</a></li>
+          </ul>
+          <form class="d-flex me-3" role="search">
+            <input class="form-control form-control-sm me-1" type="search" placeholder="Bạn cần tìm gì?">
+            <button class="btn btn-outline-light btn-sm"><i class="bi bi-search"></i></button>
+          </form>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-person"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Bài 4.4 -->
+  <section id="b44" class="demo-section">
+    <h2 class="h4">Bài 4.4 – Tabs chuyển đổi nội dung</h2>
+    <ul class="nav nav-tabs mb-3" id="newsTabs" role="tablist">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tabHome">Trang chủ</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabBiz">Kinh doanh</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabTech">Công nghệ</button></li>
+    </ul>
+    <div class="tab-content border rounded p-3">
+      <div class="tab-pane fade show active" id="tabHome"><h5>Trang chủ</h5><p>Nội dung tổng hợp…</p></div>
+      <div class="tab-pane fade" id="tabBiz"><h5>Kinh doanh</h5><p>Sáng nay 25/4… (nội dung giả lập)</p></div>
+      <div class="tab-pane fade" id="tabTech"><h5>Công nghệ</h5><p>Tin công nghệ…</p></div>
+    </div>
+  </section>
+
+  <!-- Bài 4.5 -->
+  <section id="b45" class="demo-section">
+    <h2 class="h4">Bài 4.5 – Responsive Navbar đầy đủ</h2>
+    <nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#"><i class="bi bi-circle-square"></i> Brand</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navFull">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navFull">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-house-door me-1"></i>Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Messages</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Inbox</a></li>
+                <li><a class="dropdown-item" href="#">Sent</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Archived</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex me-lg-3 mb-2 mb-lg-0" role="search">
+            <div class="input-group">
+              <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+              <input class="form-control" type="search" placeholder="Search">
+            </div>
+          </form>
+          <div class="d-flex"><a class="btn btn-outline-primary" href="#"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a></div>
+        </div>
+      </div>
+    </nav>
+    <div style="height:400px"></div>
+  </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+(() => {
+  'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+
+</body>
+</html>
