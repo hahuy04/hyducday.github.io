@@ -8,7 +8,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
         <!-- Bootstrap CSS v5.2.1 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -17,8 +17,9 @@
             crossorigin="anonymous"
         />
     </head>
-    <style>
-     body {
+  <style>
+    :root { color-scheme: light dark; }
+    body {
       font-family: 'Inter', system-ui, sans-serif;
       background-color: #0f172a;
       color: #f8fafc;
@@ -53,27 +54,78 @@
     .bg-cyan {
       background-color: #06b6d4;
     }
-</style>
+    .blob {
+      filter: blur(48px);
+      opacity: 0.35;
+      position: absolute;
+      border-radius: 50%;
+    }
+    .blob-1 {
+      width: 40rem;
+      height: 40rem;
+      top: -6rem;
+      left: -6rem;
+      background-color: rgba(6, 182, 212, 0.4);
+    }
+    .blob-2 {
+      width: 36rem;
+      height: 36rem;
+      top: 12rem;
+      right: -8rem;
+      background-color: rgba(217, 70, 239, 0.4);
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .selection-cyan ::selection {
+      background-color: rgba(6, 182, 212, 0.4);
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 1rem;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, rgba(6, 182, 212, 0.6), rgba(255, 255, 255, 0.1), rgba(192, 132, 252, 0.6));
+    }
+        .active{
+        font-weight: bold;
+        color: white !important;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 0.75rem;
+      top: 1.25rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      background-color: #06b6d4;
+      box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.15);
+    }
+  </style>
       <!-- Header -->
   <header class="sticky-top py-3 bg-dark bg-opacity-50 border-bottom border-white border-opacity-10 backdrop-blur">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
         <a href="index.html" class="fw-bold text-decoration-none">Hà Đức Huy</a>
-            <nav class="d-none d-md-flex align-items-center gap-4">
+        <nav class="d-none d-md-flex align-items-center gap-4">
             <a href="index.html" class="text-white-50 text-decoration-none hover:text-white">Trang chủ</a>
-            <a href="Bai1.html" class="text-white-50 text-decoration-none hover:text-white">Chương 1</a>
-            <a href="Chuong2.html" class="text-white-50 text-decoration-none hover:text-white">Chương 2</a>
-            <a href="Chuong3.html" class="text-white-50 text-decoration-none hover:text-white">Chương 3</a>
-            <a href="Chuong4.html" class="text-white text-decoration-none active">Chương 4</a>
-            <a href="#contact" class="text-white-50 text-decoration-none hover:text-white">Contact</a>
+          <a href="Bai1.html" class="text-white-50 text-decoration-none hover:text-white active">Chương 1</a>
+          <a href="Chuong2.html" class="text-white-50 text-decoration-none hover:text-white">Chương 2</a>
+          <a href="Chuong3.html" class="text-white-50 text-decoration-none hover:text-white">Chương 3</a>
+          <a href="Chuong4.html" class="text-white-50 text-decoration-none hover:text-white ">Chương 4</a>
+          <a href="Chuong5.html" class="text-white-50 text-decoration-none hover:text-white ">Chương 5</a>
+          <a href="#contact" class="text-white-50 text-decoration-none hover:text-white">Contact</a>
         </nav>
         <div class="d-flex align-items-center gap-2">
           <a href="https://github.com/hahuy04/hyducday.github.io" target="_blank" rel="noreferrer" class="p-2 rounded-3 text-white-50 hover-bg-white hover-bg-opacity-5 hover-text-white">
             <i class="bi bi-github"></i>
           </a>
-          <button id="themeToggle" class="p-2 rounded-3 text-white-50 hover-bg-white hover-bg-opacity-5 hover-text-white">
-            <i class="bi bi-sun"></i>
-          </button>
         </div>
       </div>
     </div>
